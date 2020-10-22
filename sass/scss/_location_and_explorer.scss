@@ -1,0 +1,20 @@
+#location-and-explorer {
+  text-align: center;
+
+  #location {
+    @include x-y-centered;
+    background: #eaeaea;
+
+    input {
+      background: none;
+      border: none;
+      outline: none;
+    }
+  }
+
+  #explorer {
+    @include x-y-centered;
+    background: #f6f6f6;
+    flex-direction: column;
+  }
+}
