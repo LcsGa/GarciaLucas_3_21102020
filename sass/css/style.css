@@ -1,8 +1,10 @@
 body > header {
+  position: relative;
+  /* needed for the shadow that doesn't appear without it (even with a z-index) */
   height: 70px;
   width: 100%;
   padding-top: 0.5rem;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -18,27 +20,43 @@ body > header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #eaeaea; }
+    background: #eaeaea;
+    padding: 1rem 0; }
     #location-and-explorer #location input {
-      background: none;
       border: none;
-      outline: none; }
+      outline: none;
+      min-width: 50px;
+      background: none;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.3rem 0 0 0; }
   #location-and-explorer #explorer {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f6f6f6;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 2.5rem 3rem 3rem; }
+    #location-and-explorer #explorer p {
+      margin: 1rem 0 2rem; }
+    #location-and-explorer #explorer button {
+      border: none;
+      outline: none;
+      font-size: 0.9rem;
+      color: #fff;
+      background: linear-gradient(-5deg, #9356dc, #ff79da 90%);
+      font-weight: 500;
+      padding: 1rem 1.5rem;
+      border-radius: 50vh;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0; }
 
 body {
   font-family: "Roboto", sans-serif; }
-
-body,
-h1 {
-  margin: 0; }
 
 section {
   width: 100%; }

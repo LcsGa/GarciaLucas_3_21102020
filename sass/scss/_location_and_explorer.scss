@@ -4,11 +4,16 @@
   #location {
     @include x-y-centered;
     background: #eaeaea;
+    padding: 1rem 0;
 
     input {
+      @include reset-border-outline;
+      min-width: 50px;
       background: none;
-      border: none;
-      outline: none;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.3rem 0 0 0;
     }
   }
 
@@ -16,5 +21,21 @@
     @include x-y-centered;
     background: #f6f6f6;
     flex-direction: column;
+    padding: 2.5rem 3rem 3rem;
+
+    p {
+      margin: 1rem 0 2rem;
+    }
+
+    button {
+      @include reset-border-outline;
+      font-size: 0.9rem;
+      color: #fff;
+      background: linear-gradient(-5deg, $primary, $secondary 90%);
+      font-weight: 500;
+      padding: 1rem 1.5rem;
+      border-radius: 50vh;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    }
   }
 }
