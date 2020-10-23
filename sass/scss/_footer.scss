@@ -12,10 +12,19 @@ footer {
 
   ul {
     list-style: none;
-    padding: 1.3rem 0 0;
+    padding: 0.7rem 0 0;
 
-    i {
-      display: inline-block;
+    li {
+      @include flexed;
+      margin-top: 0.6rem;
+
+      .icon {
+        width: 1.5rem;
+      }
+    }
+
+    & :nth-child(2n) i {
+      font-size: 0.8rem;
     }
   }
 }

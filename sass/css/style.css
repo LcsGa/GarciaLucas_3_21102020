@@ -98,7 +98,7 @@ figure {
   height: 250px;
   background: white;
   border-radius: 20px;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 0;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); }
   figure .new {
     position: absolute;
@@ -114,13 +114,19 @@ figure {
     display: flex;
     align-items: center;
     overflow: hidden;
-    flex: 2; }
+    flex: 32; }
   figure img {
     width: 100%;
     object-fit: cover; }
   figure figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex: 1;
     padding: 1rem 1rem; }
+    figure figcaption i {
+      font-size: 1.5rem;
+      padding-right: 1rem; }
 
 footer {
   color: white;
@@ -133,9 +139,14 @@ footer {
     color: white; }
   footer ul {
     list-style: none;
-    padding: 1.3rem 0 0; }
-    footer ul i {
-      display: inline-block; }
+    padding: 0.7rem 0 0; }
+    footer ul li {
+      display: flex;
+      margin-top: 0.6rem; }
+      footer ul li .icon {
+        width: 1.5rem; }
+    footer ul :nth-child(2n) i {
+      font-size: 0.8rem; }
 
 :root {
   font-size: 16px; }

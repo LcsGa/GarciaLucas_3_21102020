@@ -7,7 +7,7 @@ figure {
   height: 250px;
   background: white;
   border-radius: $pxRadius;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 0;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 
   .new {
@@ -24,7 +24,7 @@ figure {
   .image {
     @include x-y-centered;
     @include hidden-overflow;
-    flex: 2;
+    flex: 32;
   }
 
   img {
@@ -33,7 +33,14 @@ figure {
   }
 
   figcaption {
+    @include y-centered;
+    justify-content: space-between;
     flex: 1;
     padding: 1rem 1rem;
+
+    i {
+      font-size: 1.5rem;
+      padding-right: 1rem;
+    }
   }
 }
