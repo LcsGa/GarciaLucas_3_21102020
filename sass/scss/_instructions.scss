@@ -5,14 +5,16 @@
   margin: 1.5rem (1.5rem / 2);
   margin-right: 0;
   padding: 1.7rem 2.3rem;
-  border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: $pxRadius;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* almost the same as the explorer button */
 
-  i {
-    font-size: 1.2rem;
-    display: inline-block;
-    color: $grey;
-    padding-right: 2.3rem - (1.5rem / 2);
+  .icon {
+    width: 3rem;
+
+    i {
+      font-size: 1.2rem;
+      color: $grey;
+    }
   }
 
   & p:last-child {

@@ -1,10 +1,26 @@
-@mixin x-y-centered {
+@mixin flexed {
   display: flex;
-  justify-content: center;
+}
+
+@mixin y-centered {
+  @include flexed;
   align-items: center;
+}
+
+@mixin x-y-centered {
+  justify-content: center;
+  @include y-centered;
 }
 
 @mixin reset-border-outline {
   border: none;
   outline: none;
+}
+
+@mixin hidden-overflow {
+  overflow: hidden;
+}
+
+@mixin w100p {
+  width: 100%;
 }

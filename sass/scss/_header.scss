@@ -1,10 +1,10 @@
 body > header {
+  @include w100p;
+  @include x-y-centered;
   position: relative; /* needed for the shadow that doesn't appear without it (even with a z-index) */
   height: 70px;
-  width: 100%;
   padding-top: 0.5rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  @include x-y-centered;
 
   h1 {
     font-family: $logo-title;

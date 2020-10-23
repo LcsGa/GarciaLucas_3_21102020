@@ -2,6 +2,13 @@
 @import "mixins";
 @import "header";
 @import "location_and_explorer";
+@import "instructions";
+@import "restaurants-list";
+@import "footer";
+
+:root {
+  font-size: 16px;
+}
 
 * {
   box-sizing: border-box;
@@ -12,6 +19,23 @@ body {
   font-family: $text;
 }
 
+main > :nth-child(2n + 1) {
+  background: $lighterGrey;
+}
+
+article {
+  padding: 3rem 1.3rem;
+}
+
 section {
-  width: 100%;
+  @include w100p;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:visited {
+    color: black;
+  }
 }
