@@ -148,8 +148,30 @@ footer {
     footer ul :nth-child(2n) i {
       font-size: 0.8rem; }
 
+#restaurant-article header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+  #restaurant-article header i {
+    font-size: 1.8rem;
+    margin-right: 1rem; }
+
 #background-img {
-  width: 100%; }
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden; }
+  #background-img img {
+    width: 110%; }
+
+#restaurant-article {
+  background: #fff;
+  position: relative;
+  top: -3.5rem;
+  border-radius: 40px; }
 
 :root {
   font-size: 16px; }

@@ -12,6 +12,11 @@
   @include y-centered;
 }
 
+@mixin x-space-between {
+  @include flexed;
+  justify-content: space-between;
+}
+
 @mixin reset-border-outline {
   border: none;
   outline: none;

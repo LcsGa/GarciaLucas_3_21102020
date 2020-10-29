@@ -1,0 +1,17 @@
+@import "restaurants_pages_header";
+
+#background-img {
+  @include x-y-centered;
+  width: 100%;
+  overflow: hidden;
+  img {
+    width: 110%;
+  }
+}
+
+#restaurant-article {
+  background: #fff;
+  position: relative;
+  top: -3.5rem;
+  border-radius: 40px;
+}

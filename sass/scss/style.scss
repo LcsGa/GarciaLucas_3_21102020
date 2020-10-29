@@ -5,7 +5,7 @@
 @import "instructions";
 @import "restaurants-list";
 @import "footer";
-@import "restaurants";
+@import "restaurants_pages";
 
 :root {
   font-size: 16px;
@@ -35,7 +35,6 @@ section {
 a {
   text-decoration: none;
   color: black;
-
   &:visited {
     color: black;
   }

@@ -24,13 +24,15 @@
 
     <main>
       <!-- Restaurant's background image -->
-      <img
-        id="background-img"
-        src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-        alt="À la française"
-      />
 
-      <article>
+      <div id="background-img">
+        <img
+          src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="À la française"
+        />
+      </div>
+
+      <article id="restaurant-article">
         <!-- Restaurant name -->
         <header>
           <h2>À la française</h2>
@@ -148,8 +150,14 @@
     <footer>
       <h4>ohmyfood</h4>
       <ul>
-        <li><i class="fas fa-utensils"></i>Propose un restaurant</li>
-        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+        <li>
+          <div class="icon"><i class="fas fa-utensils"></i></div>
+          Propose un restaurant
+        </li>
+        <li>
+          <div class="icon"><i class="fas fa-hands-helping"></i></div>
+          Devenir partenaire
+        </li>
         <li>Mentions légales</li>
         <li>Contact</li>
       </ul>

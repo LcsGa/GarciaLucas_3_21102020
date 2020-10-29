@@ -1,0 +1,10 @@
+#restaurant-article header {
+  @include x-space-between;
+  font-family: $logo-title;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  i {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+}
