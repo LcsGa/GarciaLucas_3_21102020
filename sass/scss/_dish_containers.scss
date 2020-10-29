@@ -1,0 +1,27 @@
+.dish-container {
+  @include flexed;
+  background: #fff;
+  margin: 0.8rem 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  .dish {
+    @include y-centered-x-space-between;
+    flex: 1;
+    padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+    h4 {
+      font-size: 1.2rem;
+    }
+    p {
+      margin-top: 0.3rem;
+    }
+    .price {
+      @include flexed;
+      align-self: stretch;
+      align-items: flex-end;
+      font-weight: bold;
+    }
+  }
+  i {
+    display: none;
+  }
+}

@@ -2,9 +2,9 @@
 /* un peu plus foncé */
 body > header {
   width: 100%;
-  justify-content: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   /* needed for the shadow that doesn't appear without it (even with a z-index) */
   height: 70px;
@@ -20,9 +20,9 @@ body > header {
   padding: 0;
   text-align: center; }
   #location-and-explorer #location {
-    justify-content: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: #eaeaea;
     padding: 1rem 0; }
     #location-and-explorer #location input {
@@ -35,23 +35,24 @@ body > header {
       font-weight: 700;
       padding: 0.3rem 0 0 0; }
   #location-and-explorer #explorer {
-    justify-content: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: 3rem; }
     #location-and-explorer #explorer p {
       margin: 1rem 0 2rem; }
-    #location-and-explorer #explorer button {
-      border: none;
-      outline: none;
-      font-size: 0.9rem;
-      color: white;
-      background: linear-gradient(-5deg, #9356dc, #ff79da 90%);
-      font-weight: 500;
-      padding: 1rem 1.5rem;
-      border-radius: 50vh;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); }
+
+button {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  color: white;
+  background: linear-gradient(-5deg, #9356dc, #ff79da 90%);
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  border-radius: 50vh;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); }
 
 #instructions > div {
   display: flex;
@@ -78,9 +79,9 @@ body > header {
     color: #9356dc !important; }
 
 .index-nb {
-  justify-content: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
   left: -0.75rem;
   height: 1.5rem;
@@ -110,9 +111,9 @@ figure {
     background: #99e2d0;
     font-weight: 500; }
   figure .image {
-    justify-content: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
     flex: 32; }
   figure img {
@@ -148,30 +149,76 @@ footer {
     footer ul :nth-child(2n) i {
       font-size: 0.8rem; }
 
-#restaurant-article header {
+.dish-container {
   display: flex;
-  justify-content: space-between;
-  font-family: "Shrikhand", cursive;
-  font-size: 1.3rem;
-  margin-bottom: 2rem; }
-  #restaurant-article header i {
-    font-size: 1.8rem;
-    margin-right: 1rem; }
+  background: #fff;
+  margin: 0.8rem 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
+  .dish-container .dish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0.8rem 1.5rem 0.8rem 0.8rem; }
+    .dish-container .dish h4 {
+      font-size: 1.2rem; }
+    .dish-container .dish p {
+      margin-top: 0.3rem; }
+    .dish-container .dish .price {
+      display: flex;
+      align-self: stretch;
+      align-items: flex-end;
+      font-weight: bold; }
+  .dish-container i {
+    display: none; }
 
 #background-img {
-  justify-content: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 300px;
   width: 100%;
   overflow: hidden; }
   #background-img img {
     width: 110%; }
 
 #restaurant-article {
-  background: #fff;
+  background: #f6f6f6;
   position: relative;
   top: -3.5rem;
-  border-radius: 40px; }
+  border-radius: 40px 40px 0 0;
+  margin-bottom: -3.5rem; }
+  #restaurant-article section {
+    padding-bottom: 0.2rem; }
+  #restaurant-article button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: block;
+    margin: 2rem auto; }
+
+#restaurant-article header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3rem;
+  margin-top: -0.8rem; }
+  #restaurant-article header i {
+    padding-top: 0.5rem;
+    font-size: 1.8rem;
+    margin-right: 1.5rem; }
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 2rem; }
+  .section-title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 40px;
+    background: #99e2d0;
+    margin-top: 0.3rem; }
 
 :root {
   font-size: 16px; }

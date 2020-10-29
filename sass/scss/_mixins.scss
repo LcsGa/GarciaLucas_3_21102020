@@ -8,13 +8,18 @@
 }
 
 @mixin x-y-centered {
-  justify-content: center;
   @include y-centered;
+  justify-content: center;
 }
 
 @mixin x-space-between {
   @include flexed;
   justify-content: space-between;
+}
+
+@mixin y-centered-x-space-between {
+  @include x-space-between;
+  align-items: center;
 }
 
 @mixin reset-border-outline {

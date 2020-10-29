@@ -2,27 +2,22 @@ footer {
   color: white;
   background: #353535;
   padding: 1.3rem 1.3rem 2rem;
-
   h4 {
     font-family: $logo-title;
     font-size: 1.2rem;
     font-weight: 400;
     color: white;
   }
-
   ul {
     list-style: none;
     padding: 0.7rem 0 0;
-
     li {
       @include flexed;
       margin-top: 0.6rem;
-
       .icon {
         width: 1.5rem;
       }
     }
-
     & :nth-child(2n) i {
       font-size: 0.8rem;
     }

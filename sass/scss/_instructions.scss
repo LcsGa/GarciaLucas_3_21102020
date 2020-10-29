@@ -7,16 +7,13 @@
   padding: 1.7rem 2.3rem;
   border-radius: $pxRadius;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* almost the same as the explorer button */
-
   .icon {
     width: 3rem;
-
     i {
       font-size: 1.2rem;
       color: $grey;
     }
   }
-
   & p:last-child {
     font-weight: 600;
   }
@@ -24,7 +21,6 @@
 
 #purple-box {
   background: #f5edff !important;
-
   i {
     color: $purple !important;
   }

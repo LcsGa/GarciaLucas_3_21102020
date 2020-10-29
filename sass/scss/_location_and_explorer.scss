@@ -1,12 +1,10 @@
 #location-and-explorer {
   padding: 0;
   text-align: center;
-
   #location {
     @include x-y-centered;
     background: $lightGrey;
     padding: 1rem 0;
-
     input {
       @include reset-border-outline;
       min-width: 50px;
@@ -17,25 +15,12 @@
       padding: 0.3rem 0 0 0;
     }
   }
-
   #explorer {
     @include x-y-centered;
     flex-direction: column;
     padding: 3rem;
-
     p {
       margin: 1rem 0 2rem;
-    }
-
-    button {
-      @include reset-border-outline;
-      font-size: 0.9rem;
-      color: white;
-      background: linear-gradient(-5deg, $purple, $pink 90%);
-      font-weight: 500;
-      padding: 1rem 1.5rem;
-      border-radius: 50vh;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     }
   }
 }

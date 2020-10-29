@@ -9,7 +9,6 @@ figure {
   border-radius: $pxRadius;
   margin: 1.5rem 0 0;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-
   .new {
     position: absolute;
     top: 0.8rem;
@@ -20,24 +19,20 @@ figure {
     background: $seagreen;
     font-weight: 500;
   }
-
   .image {
     @include x-y-centered;
     @include hidden-overflow;
     flex: 32;
   }
-
   img {
     @include w100p;
     object-fit: cover;
   }
-
   figcaption {
     @include y-centered;
     justify-content: space-between;
     flex: 1;
     padding: 1rem 1rem;
-
     i {
       font-size: 1.5rem;
       padding-right: 1rem;

@@ -1,7 +1,8 @@
-@import "restaurants_pages_header";
+@import "dish_containers";
 
 #background-img {
   @include x-y-centered;
+  height: 300px;
   width: 100%;
   overflow: hidden;
   img {
@@ -10,8 +11,46 @@
 }
 
 #restaurant-article {
-  background: #fff;
+  background: $lighterGrey;
   position: relative;
   top: -3.5rem;
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
+  margin-bottom: -3.5rem;
+  section {
+    padding-bottom: 0.2rem;
+  }
+  button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+// header
+#restaurant-article header {
+  @include x-space-between;
+  font-family: $logo-title;
+  font-size: 1.3rem;
+  margin-top: -0.8rem;
+  i {
+    padding-top: 0.5rem;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+  }
+}
+
+// titles
+.section-title {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  &::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 40px;
+    background: $seagreen;
+    margin-top: 0.3rem;
+  }
 }
