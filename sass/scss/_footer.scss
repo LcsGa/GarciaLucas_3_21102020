@@ -1,5 +1,4 @@
 footer {
-  color: white;
   background: #353535;
   padding: 1.3rem 1.3rem 2rem;
   h4 {
@@ -14,6 +13,7 @@ footer {
     li {
       @include flexed;
       margin-top: 0.6rem;
+      color: white;
       .icon {
         width: 1.5rem;
       }

@@ -11,158 +11,178 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>ohmyfood - Le délice des sens</title>
   </head>
   <body>
-    <!-- header -->
-    <header>
-      <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
-      <h1>ohmyfood</h1>
-    </header>
-    <main>
-      <!-- Restaurant's background image -->
-      <div id="background-img">
-        <img
-          src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-          alt="Le délice des sens"
-        />
+    <!-- loader -->
+    <div id="loader-container">
+      <div id="loader">
+        <div class="item"><i class="fas fa-utensils"></i></div>
+        <div class="item" style="animation-delay: 0.2s">
+          <i class="fas fa-fish"></i>
+        </div>
+        <div class="item" style="animation-delay: 0.4s">
+          <i class="fas fa-carrot"></i>
+        </div>
+        <div class="item" style="animation-delay: 0.6s">
+          <i class="fas fa-drumstick-bite"></i>
+        </div>
+        <div class="item" style="animation-delay: 0.7s">
+          <i class="fas fa-lemon"></i>
+        </div>
       </div>
-      <article id="restaurant-article">
-        <!-- Restaurant name -->
-        <header>
-          <h2>Le délice des sens</h2>
-          <i class="far fa-heart"></i>
-        </header>
-        <!-- First section - Appetizers -->
-        <section>
-          <h3 class="section-title">ENTRÉES</h3>
-          <!-- Appetizer -->
-          <div class="dish-container">
-            <div class="dish">
-              <div class="description">
-                <h4 class="dish-name">Tartare de thon</h4>
-                <p>Assaisonné au yuzu</p>
+    </div>
+    <div id="app-container">
+      <!-- header -->
+      <header>
+        <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+        <h1>ohmyfood</h1>
+      </header>
+      <main>
+        <!-- Restaurant's background image -->
+        <div id="background-img">
+          <img
+            src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt="Le délice des sens"
+          />
+        </div>
+        <article id="restaurant-article">
+          <!-- Restaurant name -->
+          <header>
+            <h2>Le délice des sens</h2>
+            <i class="fas fa-heart"></i>
+          </header>
+          <!-- First section - Appetizers -->
+          <section>
+            <h3 class="section-title">ENTRÉES</h3>
+            <!-- Appetizer -->
+            <div class="dish-container">
+              <div class="dish">
+                <div class="description">
+                  <h4 class="dish-name">Tartare de thon</h4>
+                  <p>Assaisonné au yuzu</p>
+                </div>
+                <p class="price">25€</p>
               </div>
-              <p class="price">25€</p>
+              <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
             </div>
-            <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
-          </div>
-          <!-- Appetizer -->
-          <div class="dish-container">
-            <div class="dish">
-              <div class="description">
-                <h4 class="dish-name">Bouchée de homard croustillant</h4>
-                <p>Et sa farandole de petits légumes</p>
+            <!-- Appetizer -->
+            <div class="dish-container">
+              <div class="dish">
+                <div class="description">
+                  <h4 class="dish-name">Bouchée de homard croustillant</h4>
+                  <p>Et sa farandole de petits légumes</p>
+                </div>
+                <p class="price">35€</p>
               </div>
-              <p class="price">35€</p>
+              <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
             </div>
-            <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
-          </div>
-          <!-- Appetizer -->
-          <div class="dish-container">
-            <div class="dish">
-              <div class="description">
-                <h4 class="dish-name">Velouté de cèpes</h4>
-                <p>Aux truffes</p>
+            <!-- Appetizer -->
+            <div class="dish-container">
+              <div class="dish">
+                <div class="description">
+                  <h4 class="dish-name">Velouté de cèpes</h4>
+                  <p>Aux truffes</p>
+                </div>
+                <p class="price">20€</p>
               </div>
-              <p class="price">20€</p>
+              <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
             </div>
-            <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
-          </div>
-        </section>
-        <!-- Second section - Main dishes -->
-        <section>
-          <h3 class="section-title">PLATS</h3>
-          <!-- Main -->
-          <div class="dish-container">
-            <div class="dish">
-              <div class="description">
-                <h4 class="dish-name">Poulet rôti aux herbes de Provence</h4>
-                <p>Et sa crème de truffe</p>
+          </section>
+          <!-- Second section - Main dishes -->
+          <section>
+            <h3 class="section-title">PLATS</h3>
+            <!-- Main -->
+            <div class="dish-container">
+              <div class="dish">
+                <div class="description">
+                  <h4 class="dish-name">Poulet rôti aux herbes de Provence</h4>
+                  <p>Et sa crème de truffe</p>
+                </div>
+                <p class="price">40€</p>
               </div>
-              <p class="price">40€</p>
+              <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
             </div>
-            <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
-          </div>
-          <!-- Main -->
-          <div class="dish-container">
-            <div class="dish">
-              <div class="description">
-                <h4 class="dish-name">Langouste rôtie</h4>
-                <p>Et ses légumes de saison</p>
+            <!-- Main -->
+            <div class="dish-container">
+              <div class="dish">
+                <div class="description">
+                  <h4 class="dish-name">Langouste rôtie</h4>
+                  <p>Et ses légumes de saison</p>
+                </div>
+                <p class="price">35€</p>
               </div>
-              <p class="price">35€</p>
+              <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
             </div>
-            <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
-          </div>
-          <!-- Main -->
-          <div class="dish-container">
-            <div class="dish">
-              <div class="description">
-                <h4 class="dish-name">Côte de boeuf Angus</h4>
-                <p>Et sa purée de panais</p>
+            <!-- Main -->
+            <div class="dish-container">
+              <div class="dish">
+                <div class="description">
+                  <h4 class="dish-name">Côte de boeuf Angus</h4>
+                  <p>Et sa purée de panais</p>
+                </div>
+                <p class="price">44€</p>
               </div>
-              <p class="price">44€</p>
+              <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
             </div>
-            <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
-          </div>
-        </section>
-        <!-- Third section - Desserts -->
-        <section>
-          <h3 class="section-title">DESSERTS</h3>
-          <!-- Dessert -->
-          <div class="dish-container">
-            <div class="dish">
-              <div class="description">
-                <h4 class="dish-name">Farandole de desserts</h4>
-                <p>Du chef</p>
+          </section>
+          <!-- Third section - Desserts -->
+          <section>
+            <h3 class="section-title">DESSERTS</h3>
+            <!-- Dessert -->
+            <div class="dish-container">
+              <div class="dish">
+                <div class="description">
+                  <h4 class="dish-name">Farandole de desserts</h4>
+                  <p>Du chef</p>
+                </div>
+                <p class="price">18€</p>
               </div>
-              <p class="price">18€</p>
+              <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
             </div>
-            <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
-          </div>
-          <!-- Dessert -->
-          <div class="dish-container">
-            <div class="dish">
-              <div class="description">
-                <h4 class="dish-name">Crème brulée</h4>
-                <p>Revisité</p>
+            <!-- Dessert -->
+            <div class="dish-container">
+              <div class="dish">
+                <div class="description">
+                  <h4 class="dish-name">Crème brulée</h4>
+                  <p>Revisité</p>
+                </div>
+                <p class="price">22€</p>
               </div>
-              <p class="price">22€</p>
+              <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
             </div>
-            <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
-          </div>
-          <!-- Dessert -->
-          <div class="dish-container">
-            <div class="dish">
-              <div class="description">
-                <h4 class="dish-name">Tiramisu</h4>
-                <p>À la noisette</p>
+            <!-- Dessert -->
+            <div class="dish-container">
+              <div class="dish">
+                <div class="description">
+                  <h4 class="dish-name">Tiramisu</h4>
+                  <p>À la noisette</p>
+                </div>
+                <p class="price">23€</p>
               </div>
-              <p class="price">23€</p>
+              <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
             </div>
-            <div class="chosen-dish"><i class="fas fa-check-circle"></i></div>
-          </div>
-        </section>
-        <button>Commander</button>
-      </article>
-    </main>
-    <!-- footer -->
-    <footer>
-      <h4>ohmyfood</h4>
-      <ul>
-        <li>
-          <div class="icon"><i class="fas fa-utensils"></i></div>
-          Propose un restaurant
-        </li>
-        <li>
-          <div class="icon"><i class="fas fa-hands-helping"></i></div>
-          Devenir partenaire
-        </li>
-        <li>Mentions légales</li>
-        <a href="mailto:ohmyfood@contact.fr"><li>Contact</li></a>
-      </ul>
-    </footer>
+          </section>
+          <button>Commander</button>
+        </article>
+      </main>
+      <!-- footer -->
+      <footer>
+        <h4>ohmyfood</h4>
+        <ul>
+          <li>
+            <div class="icon"><i class="fas fa-utensils"></i></div>
+            Propose un restaurant
+          </li>
+          <li>
+            <div class="icon"><i class="fas fa-hands-helping"></i></div>
+            Devenir partenaire
+          </li>
+          <li>Mentions légales</li>
+          <a href="mailto:ohmyfood@contact.fr"><li>Contact</li></a>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>

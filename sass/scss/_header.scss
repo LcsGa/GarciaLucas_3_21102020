@@ -1,4 +1,4 @@
-body > header {
+#app-container > header {
   @include w100p;
   @include x-y-centered;
   position: relative; /* needed for the shadow that doesn't appear without it (even with a z-index) */

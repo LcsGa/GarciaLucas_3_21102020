@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* un peu plus foncé */
-body > header {
+#app-container > header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -10,9 +10,9 @@ body > header {
   height: 70px;
   padding-top: 0.5rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); }
-  body > header h1 {
+  #app-container > header h1 {
     font-family: "Shrikhand", cursive; }
-  body > header a {
+  #app-container > header a {
     position: absolute;
     left: 35px; }
 
@@ -46,6 +46,7 @@ body > header {
 button {
   border: none;
   outline: none;
+  cursor: pointer;
   font-size: 0.9rem;
   color: white;
   background: linear-gradient(-5deg, #9356dc, #ff79da 90%);
@@ -130,7 +131,6 @@ figure {
       padding-right: 1rem; }
 
 footer {
-  color: white;
   background: #353535;
   padding: 1.3rem 1.3rem 2rem; }
   footer h4 {
@@ -143,7 +143,8 @@ footer {
     padding: 0.7rem 0 0; }
     footer ul li {
       display: flex;
-      margin-top: 0.6rem; }
+      margin-top: 0.6rem;
+      color: white; }
       footer ul li .icon {
         width: 1.5rem; }
     footer ul :nth-child(2n) i {
@@ -151,10 +152,12 @@ footer {
 
 .dish-container {
   display: flex;
-  background: #fff;
+  background: white;
   margin: 0.8rem 0;
   border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer; }
   .dish-container .dish {
     display: flex;
     justify-content: space-between;
@@ -170,8 +173,47 @@ footer {
       align-self: stretch;
       align-items: flex-end;
       font-weight: bold; }
-  .dish-container i {
-    display: none; }
+  .dish-container .chosen-dish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #99e2d0; }
+    .dish-container .chosen-dish i {
+      font-size: 1.5rem;
+      color: white; }
+
+button {
+  transition: all 0.5s; }
+  button:hover {
+    opacity: 0.8;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); }
+
+.dish-container .chosen-dish {
+  width: 0px;
+  overflow: hidden;
+  transition: all 0.5s; }
+
+.dish-container i {
+  transition: all 0.5s; }
+
+.dish-container:hover .chosen-dish {
+  width: 75px; }
+
+.dish-container:hover i {
+  transform: rotate(360deg); }
+
+.fa-heart {
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: black;
+  transition: all 10s; }
+  .fa-heart:hover {
+    -webkit-text-stroke: 0;
+    background: linear-gradient(-5deg, #ff79da, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 #background-img {
   display: flex;
@@ -219,6 +261,53 @@ footer {
     width: 40px;
     background: #99e2d0;
     margin-top: 0.3rem; }
+
+#loader-container {
+  background: #f6f6f6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: endLoading 2s 2s forwards; }
+  #loader-container #loader {
+    display: flex;
+    justify-content: space-between;
+    width: calc(clamp(3rem, 6vw, 7rem) * 6); }
+  #loader-container .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(30deg, #9356dc, #ff79da);
+    box-shadow: 0 10px 15px rgba(147, 86, 220, 0.5);
+    height: clamp(3rem, 6vw, 7rem);
+    width: clamp(3rem, 6vw, 7rem);
+    border-radius: 50%;
+    animation: move 0.8s infinite ease-out alternate; }
+  #loader-container i {
+    color: #eee;
+    font-size: clamp(1.5rem, 3.5vw, 4rem); }
+
+@keyframes move {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-7rem); } }
+
+@keyframes endLoading {
+  to {
+    height: 0;
+    opacity: 0;
+    overflow: hidden; } }
+
+#app-container {
+  height: 0;
+  overflow: hidden;
+  animation: displayApp 0s 2s forwards; }
+
+@keyframes displayApp {
+  to {
+    height: auto; } }
 
 :root {
   font-size: 16px; }

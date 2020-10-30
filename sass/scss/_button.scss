@@ -1,5 +1,6 @@
 button {
   @include reset-border-outline;
+  cursor: pointer;
   font-size: 0.9rem;
   color: white;
   background: linear-gradient(-5deg, $purple, $pink 90%);

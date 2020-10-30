@@ -1,0 +1,55 @@
+#loader-container {
+  background: $lighterGrey;
+  height: 100vh;
+  @include x-y-centered;
+  animation: endLoading 2s 2s forwards;
+  // display: none;
+  #loader {
+    @include x-space-between;
+    width: calc(clamp(3rem, 6vw, 7rem) * 6);
+  }
+  .item {
+    @include x-y-centered;
+    position: relative;
+    background: linear-gradient(30deg, $purple, $pink);
+    box-shadow: 0 10px 15px rgba(147, 86, 220, 0.5);
+    height: clamp(3rem, 6vw, 7rem);
+    width: clamp(3rem, 6vw, 7rem);
+    border-radius: 50%;
+    animation: move 0.8s infinite ease-out alternate;
+  }
+  i {
+    color: #eee;
+    font-size: clamp(1.5rem, 3.5vw, 4rem);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes endLoading {
+  to {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+
+#app-container {
+  height: 0;
+  overflow: hidden;
+  animation: displayApp 0s 2s forwards;
+}
+
+@keyframes displayApp {
+  to {
+    height: auto;
+  }
+}
