@@ -223,7 +223,9 @@ button {
   width: 100%;
   overflow: hidden; }
   #background-img img {
-    width: 110%; }
+    height: 110%;
+    width: 110%;
+    object-fit: cover; }
 
 #restaurant-article {
   background: #f6f6f6;

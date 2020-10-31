@@ -7,7 +7,9 @@
   width: 100%;
   overflow: hidden;
   img {
+    height: 110%;
     width: 110%;
+    object-fit: cover;
   }
 }
 
