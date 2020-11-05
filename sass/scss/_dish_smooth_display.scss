@@ -4,6 +4,37 @@
   animation: smooth-display 1s ease-in forwards;
 }
 
+.dish-1 {
+  animation-delay: 4s;
+}
+.dish-2 {
+  animation-delay: 4.15s;
+}
+.dish-3 {
+  animation-delay: 4.3s;
+}
+.dish-4 {
+  animation-delay: 4.45s;
+}
+.dish-5 {
+  animation-delay: 4.6s;
+}
+.dish-6 {
+  animation-delay: 4.75s;
+}
+.dish-7 {
+  animation-delay: 4.9s;
+}
+.dish-8 {
+  animation-delay: 5.05s;
+}
+.dish-9 {
+  animation-delay: 5.2s;
+}
+.dish-10 {
+  animation-delay: 5.35s;
+}
+
 @keyframes smooth-display {
   100% {
     opacity: 1;
