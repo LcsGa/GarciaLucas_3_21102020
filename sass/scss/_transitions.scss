@@ -1,4 +1,4 @@
-// buttons
+// mouse over buttons
 button {
   transition: all 0.5s;
   &:hover {
@@ -7,6 +7,7 @@ button {
   }
 }
 
+// choosing a dish
 .dish-container {
   & .chosen-dish {
     width: 0px;
@@ -26,6 +27,7 @@ button {
   }
 }
 
+// TODO: need to be fixed => add restaurant to favorites
 .fa-heart {
   cursor: pointer;
   color: transparent;

@@ -1,5 +1,6 @@
 @import "dish_containers";
-@import "_transitions";
+@import "transitions";
+@import "dish_smooth_display";
 
 #background-img {
   @include x-y-centered;
