@@ -221,34 +221,34 @@ button {
   animation: smooth-display 1s ease-in forwards; }
 
 .dish-1 {
-  animation-delay: 4s; }
+  animation-delay: 2.5s; }
 
 .dish-2 {
-  animation-delay: 4.15s; }
+  animation-delay: 2.65s; }
 
 .dish-3 {
-  animation-delay: 4.3s; }
+  animation-delay: 2.8s; }
 
 .dish-4 {
-  animation-delay: 4.45s; }
+  animation-delay: 2.95s; }
 
 .dish-5 {
-  animation-delay: 4.6s; }
+  animation-delay: 3.1s; }
 
 .dish-6 {
-  animation-delay: 4.75s; }
+  animation-delay: 3.25s; }
 
 .dish-7 {
-  animation-delay: 4.9s; }
+  animation-delay: 3.4s; }
 
 .dish-8 {
-  animation-delay: 5.05s; }
+  animation-delay: 3.55s; }
 
 .dish-9 {
-  animation-delay: 5.2s; }
+  animation-delay: 3.7s; }
 
 .dish-10 {
-  animation-delay: 5.35s; }
+  animation-delay: 3.85s; }
 
 @keyframes smooth-display {
   100% {
