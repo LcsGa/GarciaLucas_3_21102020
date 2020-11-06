@@ -165,14 +165,24 @@ footer {
     flex: 1;
     padding: 0.8rem 1.5rem 0.8rem 0.8rem; }
     .dish-container .dish h4 {
-      font-size: 1.2rem; }
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 1.2rem;
+      height: 23px; }
     .dish-container .dish p {
       margin-top: 0.3rem; }
+    .dish-container .dish .description p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%; }
     .dish-container .dish .price {
       display: flex;
       align-self: stretch;
       align-items: flex-end;
-      font-weight: bold; }
+      font-weight: bold;
+      padding-left: 1.5rem; }
   .dish-container .chosen-dish {
     display: flex;
     align-items: center;
@@ -196,11 +206,17 @@ button {
 .dish-container i {
   transition: all 0.5s; }
 
+.dish-container:hover .dish {
+  width: calc(100% - calc((0.8rem + 1.5rem) + (75px + 27.55px))); }
+
 .dish-container:hover .chosen-dish {
   width: 75px; }
 
 .dish-container:hover i {
   transform: rotate(360deg); }
+
+.dish-container:hover .description {
+  width: calc(100% - 3rem); }
 
 .fa-heart {
   cursor: pointer;

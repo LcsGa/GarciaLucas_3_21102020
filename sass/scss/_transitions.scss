@@ -18,11 +18,19 @@ button {
     transition: all 0.5s;
   }
   &:hover {
+    & .dish {
+      width: calc(100% - calc((0.8rem + 1.5rem) + (75px + 27.55px)));
+      // 100%(.dish-container) - [(padding-left + padding-right)(.dish) + width(.choosen-dish) + width(.price)]
+    }
     & .chosen-dish {
       width: 75px;
     }
     & i {
       transform: rotate(360deg);
+    }
+    & .description {
+      width: calc(100% - 3rem);
+      // width(.dish) - 2 * padding-right(.dish)
     }
   }
 }

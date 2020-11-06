@@ -11,17 +11,23 @@
     flex: 1;
     padding: 0.8rem 1.5rem 0.8rem 0.8rem;
     h4 {
+      @include text-elipsis;
       font-size: 1.2rem;
+      height: 23px;
     }
     p {
-      // text-overflow: ellipsis;
       margin-top: 0.3rem;
+    }
+    .description p {
+      @include text-elipsis;
+      width: 100%;
     }
     .price {
       @include flexed;
       align-self: stretch;
       align-items: flex-end;
       font-weight: bold;
+      padding-left: 1.5rem;
     }
   }
   .chosen-dish {

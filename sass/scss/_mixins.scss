@@ -34,3 +34,9 @@
 @mixin w100p {
   width: 100%;
 }
+
+@mixin text-elipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
