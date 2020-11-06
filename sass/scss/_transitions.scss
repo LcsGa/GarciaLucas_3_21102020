@@ -27,18 +27,30 @@ button {
   }
 }
 
-// TODO: need to be fixed => add restaurant to favorites
-.fa-heart {
-  cursor: pointer;
-  color: transparent;
-  -webkit-text-stroke: 2px;
-  -webkit-text-stroke-color: black;
-  transition: all 10s;
-  &:hover {
-    -webkit-text-stroke: 0;
+// add to favorites
+.heart {
+  @include x-y-centered;
+  .empty {
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+    transition: all 0.25s 0.25s ease-out;
+  }
+  .full {
     background: linear-gradient(-5deg, $pink, $purple);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+  }
+  &:hover {
+    & .full {
+      opacity: 1;
+    }
+    & .empty {
+      opacity: 0;
+    }
   }
 }

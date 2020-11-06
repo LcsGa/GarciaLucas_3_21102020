@@ -33,9 +33,14 @@ figure {
     justify-content: space-between;
     flex: 1;
     padding: 1rem 1rem;
+    // hearts ------------------------------
     i {
       font-size: 1.5rem;
       padding-right: 1rem;
     }
+    .full {
+      font-size: 1.625rem;
+    }
+    // hearts ------------------------------
   }
 }
