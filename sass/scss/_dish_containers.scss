@@ -10,6 +10,7 @@
     @include y-centered-x-space-between;
     flex: 1;
     padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+    width: calc(100% - 75px); //* 75px : .choosen-dish width
     h4 {
       @include text-elipsis;
       font-size: 1.2rem;
@@ -18,9 +19,12 @@
     p {
       margin-top: 0.3rem;
     }
-    .description p {
-      @include text-elipsis;
-      width: 100%;
+    .description {
+      width: calc(100% - 2 * 1.5rem); //* 1.5rem : padding around .price
+      p {
+        @include text-elipsis;
+        width: 100%;
+      }
     }
     .price {
       @include flexed;

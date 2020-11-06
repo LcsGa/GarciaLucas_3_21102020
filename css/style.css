@@ -163,7 +163,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    padding: 0.8rem 1.5rem 0.8rem 0.8rem; }
+    padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+    width: calc(100% - 75px); }
     .dish-container .dish h4 {
       white-space: nowrap;
       overflow: hidden;
@@ -172,11 +173,13 @@ footer {
       height: 23px; }
     .dish-container .dish p {
       margin-top: 0.3rem; }
-    .dish-container .dish .description p {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 100%; }
+    .dish-container .dish .description {
+      width: calc(100% - 2 * 1.5rem); }
+      .dish-container .dish .description p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%; }
     .dish-container .dish .price {
       display: flex;
       align-self: stretch;
@@ -200,23 +203,17 @@ button {
 
 .dish-container .chosen-dish {
   width: 0px;
-  overflow: hidden;
-  transition: all 0.5s; }
+  overflow: hidden; }
 
+.dish-container .chosen-dish,
 .dish-container i {
   transition: all 0.5s; }
-
-.dish-container:hover .dish {
-  width: calc(100% - calc((0.8rem + 1.5rem) + (75px + 27.55px))); }
 
 .dish-container:hover .chosen-dish {
   width: 75px; }
 
 .dish-container:hover i {
   transform: rotate(360deg); }
-
-.dish-container:hover .description {
-  width: calc(100% - 3rem); }
 
 .fa-heart {
   cursor: pointer;
