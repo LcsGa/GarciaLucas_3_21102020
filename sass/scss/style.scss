@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "media";
 @import "header";
 @import "location_and_explorer";
 @import "button";
@@ -19,14 +20,32 @@
 }
 
 body {
+  @include column-x-centered;
   font-family: $text;
 }
 
-main > :nth-child(2n + 1) {
+#app-container {
+  @include w100p;
+  max-width: 1920px;
+  @include desktop {
+    & > main {
+      display: grid;
+      grid-template: auto auto / 1fr 2fr;
+    }
+  }
+  @include tablet {
+    & > main {
+      display: grid;
+      grid-template: auto auto / 1fr 1fr;
+    }
+  }
+}
+
+#app-container > main > :nth-child(2n + 1) {
   background: $lighterGrey;
 }
 
-article {
+main > article {
   padding: 3rem 1.3rem;
 }
 
@@ -41,4 +60,8 @@ a {
   &:visited {
     color: black;
   }
+}
+
+.fa-heart {
+  cursor: pointer;
 }

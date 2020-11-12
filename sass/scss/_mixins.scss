@@ -2,6 +2,11 @@
   display: flex;
 }
 
+@mixin x-centered {
+  @include flexed;
+  justify-content: center;
+}
+
 @mixin y-centered {
   @include flexed;
   align-items: center;
@@ -17,9 +22,24 @@
   justify-content: space-between;
 }
 
+@mixin x-space-evenly {
+  @include flexed;
+  justify-content: space-evenly;
+}
+
 @mixin y-centered-x-space-between {
   @include x-space-between;
   align-items: center;
+}
+
+@mixin column-x-centered {
+  @include y-centered;
+  flex-direction: column;
+}
+
+@mixin column-y-centered {
+  @include x-centered;
+  flex-direction: column;
 }
 
 @mixin reset-border-outline {
@@ -39,4 +59,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@mixin shadowed($blur-radius, $opacity) {
+  box-shadow: 0 5px $blur-radius rgba(0, 0, 0, $opacity);
 }

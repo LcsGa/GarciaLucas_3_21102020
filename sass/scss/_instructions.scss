@@ -1,38 +1,62 @@
-#instructions > div {
-  @include y-centered;
-  position: relative;
-  background: $lighterGrey;
-  margin: 1.5rem (1.5rem / 2);
-  margin-right: 0;
-  padding: 1.7rem 2.3rem;
-  border-radius: $pxRadius;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* almost the same as the explorer button */
-  .icon {
-    width: 3rem;
-    i {
-      font-size: 1.2rem;
-      color: $grey;
+#instructions {
+  @include desktop {
+    grid-row: 2 / 3;
+    background: $lighterGrey;
+  }
+  @include tablet {
+    background: $lighterGrey;
+  }
+  main {
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+    }
+    & > div {
+      @include desktop {
+        background: white;
+        margin-right: 0.8rem;
+      }
+      @include tablet {
+        background: white;
+      }
+      @include y-centered;
+      @include shadowed(10px, 0.15);
+      position: relative;
+      background: $lighterGrey;
+      margin: 1.5rem (1.5rem / 2);
+      margin-right: 0;
+      padding: 1.7rem 2.3rem;
+      border-radius: $pxRadius;
+      .icon {
+        width: 3rem;
+        i {
+          font-size: 1.2rem;
+          color: $grey;
+        }
+      }
+      & p:last-child {
+        font-weight: 600;
+      }
     }
   }
-  & p:last-child {
-    font-weight: 600;
-  }
-}
 
-#purple-box {
-  background: #f5edff !important;
-  i {
-    color: $purple !important;
+  #purple-box {
+    background: #f5edff !important;
+    i {
+      color: $purple !important;
+    }
   }
-}
 
-.index-nb {
-  @include x-y-centered;
-  position: absolute;
-  left: -0.75rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  color: white;
-  background: $purple;
-  border-radius: 50%;
+  .index-nb {
+    @include x-y-centered;
+    position: absolute;
+    left: -0.75rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: white;
+    background: $purple;
+    border-radius: 50%;
+  }
 }

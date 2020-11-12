@@ -16,6 +16,9 @@
     }
   }
   #explorer {
+    @include desktop {
+      height: 100%;
+    }
     @include x-y-centered;
     flex-direction: column;
     padding: 3rem;

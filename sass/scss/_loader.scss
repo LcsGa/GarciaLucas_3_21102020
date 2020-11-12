@@ -1,6 +1,7 @@
 #loader-container {
   background: $lighterGrey;
   height: 100vh;
+  width: 100%;
   @include x-y-centered;
   animation: endLoading 2s 2s forwards;
   // display: none;

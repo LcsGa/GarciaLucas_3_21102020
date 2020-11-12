@@ -1,9 +1,9 @@
 .dish-container {
   @include flexed;
+  @include shadowed(10px, 0.1);
   background: white;
   margin: 0.8rem 0;
   border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
   .dish {
@@ -11,16 +11,17 @@
     flex: 1;
     padding: 0.8rem 1.5rem 0.8rem 0.8rem;
     width: calc(100% - 75px); //* 75px : .choosen-dish width
-    h4 {
-      @include text-elipsis;
-      font-size: 1.2rem;
-      height: 23px;
-    }
+
     p {
       margin-top: 0.3rem;
     }
     .description {
-      width: calc(100% - 2 * 1.5rem); //* 1.5rem : padding around .price
+      width: calc(100% - (2 * 1.5rem)); //* 1.5rem : padding around .price
+      h4 {
+        @include text-elipsis;
+        font-size: 1.2rem;
+        width: 100%;
+      }
       p {
         @include text-elipsis;
         width: 100%;
