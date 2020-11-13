@@ -9,15 +9,15 @@ button {
 
 // choosing a dish
 .dish-container {
-  & .chosen-dish {
-    width: 0px;
-    overflow: hidden;
-  }
+  & .dish,
   & .chosen-dish,
   & i {
     transition: all 0.5s;
   }
   &:hover {
+    & .dish {
+      width: calc(100% - 75px);
+    }
     & .chosen-dish {
       width: 75px;
     }

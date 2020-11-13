@@ -213,24 +213,22 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1;
-    padding: 0.8rem 1.5rem 0.8rem 0.8rem;
-    width: calc(100% - 75px); }
-    .dish-container .dish p {
-      margin-top: 0.3rem; }
+    flex-grow: 1;
+    padding: 0.8rem;
+    padding-right: 1.5rem;
+    width: 100%; }
     .dish-container .dish .description {
       width: calc(100% - (2 * 1.5rem)); }
       .dish-container .dish .description h4 {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 1.2rem;
-        width: 100%; }
+        font-size: 1.2rem; }
       .dish-container .dish .description p {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 100%; }
+        margin-top: 0.3rem; }
     .dish-container .dish .price {
       display: flex;
       align-self: stretch;
@@ -241,7 +239,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #99e2d0; }
+    background: #99e2d0;
+    width: 0px; }
     .dish-container .chosen-dish i {
       font-size: 1.5rem;
       color: white; }
@@ -252,13 +251,13 @@ button {
     opacity: 0.8;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); }
 
-.dish-container .chosen-dish {
-  width: 0px;
-  overflow: hidden; }
-
+.dish-container .dish,
 .dish-container .chosen-dish,
 .dish-container i {
   transition: all 0.5s; }
+
+.dish-container:hover .dish {
+  width: calc(100% - 75px); }
 
 .dish-container:hover .chosen-dish {
   width: 75px; }
