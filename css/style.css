@@ -357,36 +357,31 @@ button {
       margin-right: 1.5rem; }
     #restaurant-article header .full {
       font-size: 1.925rem; }
-  @media only screen and (min-width: 1240px) {
-    #restaurant-article .menu-list {
-      grid-template: auto/repeat(3, 1fr); } }
-  @media only screen and (min-width: 720px) and (max-width: 1239px) {
-    #restaurant-article .menu-list {
-      grid-template: auto auto/repeat(2, 1fr); } }
-  @media only screen and (min-width: 720px) {
-    #restaurant-article .menu-list {
-      display: grid;
-      gap: 1.3rem;
-      justify-items: center; } }
-  #restaurant-article .menu-list section {
-    padding-bottom: 0.2rem; }
+  #restaurant-article .menu-list {
+    width: 100%; }
     @media only screen and (min-width: 1240px) {
-      #restaurant-article .menu-list section {
-        width: calc(calc(calc(100vw - 17px) - 5.2rem) / 3); } }
+      #restaurant-article .menu-list {
+        grid-template: auto/repeat(3, calc(calc(100% - (2 * 1.3rem)) / 3)); } }
     @media only screen and (min-width: 720px) and (max-width: 1239px) {
-      #restaurant-article .menu-list section {
-        width: calc(calc(calc(100vw - 17px) - 3.9rem) / 2); } }
-    #restaurant-article .menu-list section .section-title {
-      font-size: 1rem;
-      font-weight: 400;
-      margin-top: 2rem; }
-      #restaurant-article .menu-list section .section-title::after {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 40px;
-        background: #99e2d0;
-        margin-top: 0.3rem; }
+      #restaurant-article .menu-list {
+        grid-template: auto auto/repeat(2, calc(calc(100% - 1.3rem) / 2)); } }
+    @media only screen and (min-width: 720px) {
+      #restaurant-article .menu-list {
+        display: grid;
+        gap: 1.3rem; } }
+    #restaurant-article .menu-list section {
+      padding-bottom: 0.2rem; }
+      #restaurant-article .menu-list section .section-title {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 2rem; }
+        #restaurant-article .menu-list section .section-title::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 40px;
+          background: #99e2d0;
+          margin-top: 0.3rem; }
   #restaurant-article button {
     padding-left: 3rem;
     padding-right: 3rem;

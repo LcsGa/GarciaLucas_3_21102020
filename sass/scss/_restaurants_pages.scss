@@ -37,24 +37,18 @@
     // hearts ------------------------------
   }
   .menu-list {
+    width: 100%;
     @include desktop {
-      grid-template: auto / repeat(3, 1fr);
+      grid-template: auto / repeat(3, calc(calc(100% - (2 * 1.3rem)) / 3));
     }
     @include tablet-only {
-      grid-template: auto auto/ repeat(2, 1fr);
+      grid-template: auto auto/ repeat(2, calc(calc(100% - 1.3rem) / 2));
     }
     @include tablet-and-above {
       display: grid;
       gap: 1.3rem;
-      justify-items: center;
     }
     section {
-      @include desktop {
-        width: calc(calc(calc(100vw - 17px) - 5.2rem) / 3);
-      }
-      @include tablet-only {
-        width: calc(calc(calc(100vw - 17px) - 3.9rem) / 2);
-      }
       padding-bottom: 0.2rem;
       .section-title {
         font-size: 1rem;
