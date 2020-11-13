@@ -3,6 +3,9 @@
   text-align: center;
   #location {
     @include x-y-centered;
+    @include tablet-only {
+      border-bottom-right-radius: 30px;
+    }
     background: $lightGrey;
     padding: 1rem 0;
     input {
@@ -18,6 +21,9 @@
   #explorer {
     @include desktop {
       height: 100%;
+    }
+    @include tablet-only {
+      height: 88%;
     }
     @include x-y-centered;
     flex-direction: column;

@@ -5,6 +5,11 @@
   @include tablet-and-above {
     background: $lighterGrey;
   }
+  h2 {
+    @include tablet-only {
+      margin-left: 1rem;
+    }
+  }
   main {
     @include desktop {
       display: flex;

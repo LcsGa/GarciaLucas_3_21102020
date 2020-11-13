@@ -25,6 +25,9 @@
     justify-content: center;
     background: #eaeaea;
     padding: 1rem 0; }
+    @media only screen and (min-width: 720px) and (max-width: 1239px) {
+      #location-and-explorer #location {
+        border-bottom-right-radius: 30px; } }
     #location-and-explorer #location input {
       border: none;
       outline: none;
@@ -43,6 +46,9 @@
     @media only screen and (min-width: 1240px) {
       #location-and-explorer #explorer {
         height: 100%; } }
+    @media only screen and (min-width: 720px) and (max-width: 1239px) {
+      #location-and-explorer #explorer {
+        height: 88%; } }
     #location-and-explorer #explorer p {
       margin: 1rem 0 2rem; }
 
@@ -65,6 +71,10 @@ button {
 @media only screen and (min-width: 720px) {
   #instructions {
     background: #f6f6f6; } }
+
+@media only screen and (min-width: 720px) and (max-width: 1239px) {
+  #instructions h2 {
+    margin-left: 1rem; } }
 
 @media only screen and (min-width: 1240px) {
   #instructions main {
