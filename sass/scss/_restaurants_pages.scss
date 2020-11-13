@@ -20,46 +20,61 @@
   top: -3.5rem;
   border-radius: 40px 40px 0 0;
   margin-bottom: -3.5rem;
-  section {
-    padding-bottom: 0.2rem;
+  header {
+    @include x-space-between;
+    font-family: $logo-title;
+    font-size: 1.3rem;
+    margin-top: -0.8rem;
+    // hearts ------------------------------
+    i {
+      padding-top: 0.5rem;
+      font-size: 1.8rem;
+      margin-right: 1.5rem;
+    }
+    .full {
+      font-size: 1.925rem;
+    }
+    // hearts ------------------------------
+  }
+  .menu-list {
+    @include desktop {
+      grid-template: auto / repeat(3, 1fr);
+    }
+    @include tablet-only {
+      grid-template: auto auto/ repeat(2, 1fr);
+    }
+    @include tablet-and-above {
+      display: grid;
+      gap: 1.3rem;
+      justify-items: center;
+    }
+    section {
+      @include desktop {
+        width: calc(calc(calc(100vw - 17px) - 5.2rem) / 3);
+      }
+      @include tablet-only {
+        width: calc(calc(calc(100vw - 17px) - 3.9rem) / 2);
+      }
+      padding-bottom: 0.2rem;
+      .section-title {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 2rem;
+        &::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 40px;
+          background: $seagreen;
+          margin-top: 0.3rem;
+        }
+      }
+    }
   }
   button {
     padding-left: 3rem;
     padding-right: 3rem;
     display: block;
     margin: 2rem auto;
-  }
-}
-
-// header
-#restaurant-article header {
-  @include x-space-between;
-  font-family: $logo-title;
-  font-size: 1.3rem;
-  margin-top: -0.8rem;
-  // hearts ------------------------------
-  i {
-    padding-top: 0.5rem;
-    font-size: 1.8rem;
-    margin-right: 1.5rem;
-  }
-  .full {
-    font-size: 1.925rem;
-  }
-  // hearts ------------------------------
-}
-
-// titles
-.section-title {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: 2rem;
-  &::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 40px;
-    background: $seagreen;
-    margin-top: 0.3rem;
   }
 }

@@ -1,4 +1,7 @@
 .dish-container {
+  @include tablet-and-above {
+    width: 100%;
+  }
   @include flexed;
   @include shadowed(10px, 0.1);
   background: white;

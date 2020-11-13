@@ -206,6 +206,9 @@ footer {
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer; }
+  @media only screen and (min-width: 720px) {
+    .dish-container {
+      width: 100%; } }
   .dish-container .dish {
     display: flex;
     justify-content: space-between;
@@ -343,38 +346,53 @@ button {
   top: -3.5rem;
   border-radius: 40px 40px 0 0;
   margin-bottom: -3.5rem; }
-  #restaurant-article section {
+  #restaurant-article header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Shrikhand", cursive;
+    font-size: 1.3rem;
+    margin-top: -0.8rem; }
+    #restaurant-article header i {
+      padding-top: 0.5rem;
+      font-size: 1.8rem;
+      margin-right: 1.5rem; }
+    #restaurant-article header .full {
+      font-size: 1.925rem; }
+  @media only screen and (min-width: 1240px) {
+    #restaurant-article .menu-list {
+      grid-template: auto/repeat(3, 1fr); } }
+  @media only screen and (min-width: 720px) and (max-width: 1239px) {
+    #restaurant-article .menu-list {
+      grid-template: auto auto/repeat(2, 1fr); } }
+  @media only screen and (min-width: 720px) {
+    #restaurant-article .menu-list {
+      display: grid;
+      gap: 1.3rem;
+      justify-items: center; } }
+  #restaurant-article .menu-list section {
     padding-bottom: 0.2rem; }
+    @media only screen and (min-width: 1240px) {
+      #restaurant-article .menu-list section {
+        width: calc(calc(calc(100vw - 17px) - 5.2rem) / 3); } }
+    @media only screen and (min-width: 720px) and (max-width: 1239px) {
+      #restaurant-article .menu-list section {
+        width: calc(calc(calc(100vw - 17px) - 3.9rem) / 2); } }
+    #restaurant-article .menu-list section .section-title {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 2rem; }
+      #restaurant-article .menu-list section .section-title::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 40px;
+        background: #99e2d0;
+        margin-top: 0.3rem; }
   #restaurant-article button {
     padding-left: 3rem;
     padding-right: 3rem;
     display: block;
     margin: 2rem auto; }
-
-#restaurant-article header {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Shrikhand", cursive;
-  font-size: 1.3rem;
-  margin-top: -0.8rem; }
-  #restaurant-article header i {
-    padding-top: 0.5rem;
-    font-size: 1.8rem;
-    margin-right: 1.5rem; }
-  #restaurant-article header .full {
-    font-size: 1.925rem; }
-
-.section-title {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: 2rem; }
-  .section-title::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 40px;
-    background: #99e2d0;
-    margin-top: 0.3rem; }
 
 #loader-container {
   background: #f6f6f6;
@@ -449,10 +467,10 @@ body {
   width: 100%;
   max-width: 1920px; }
   @media only screen and (min-width: 1240px) {
-    #app-container > main {
+    #app-container.home-page > main {
       grid-template: auto auto / 1fr 2fr; } }
   @media only screen and (min-width: 720px) {
-    #app-container > main {
+    #app-container.home-page > main {
       display: grid; } }
 
 #app-container > main > :nth-child(2n + 1) {

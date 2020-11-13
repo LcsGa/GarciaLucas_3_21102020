@@ -27,14 +27,16 @@ body {
 #app-container {
   @include w100p;
   max-width: 1920px;
-  @include desktop {
-    & > main {
-      grid-template: auto auto / 1fr 2fr;
+  &.home-page {
+    @include desktop {
+      & > main {
+        grid-template: auto auto / 1fr 2fr;
+      }
     }
-  }
-  @include tablet-and-above {
-    & > main {
-      display: grid;
+    @include tablet-and-above {
+      & > main {
+        display: grid;
+      }
     }
   }
 }
