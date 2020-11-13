@@ -1,9 +1,8 @@
 #instructions {
   @include desktop {
     grid-row: 2 / 3;
-    background: $lighterGrey;
   }
-  @include tablet {
+  @include tablet-and-above {
     background: $lighterGrey;
   }
   main {
@@ -15,10 +14,9 @@
     }
     & > div {
       @include desktop {
-        background: white;
         margin-right: 0.8rem;
       }
-      @include tablet {
+      @include tablet-and-above {
         background: white;
       }
       @include y-centered;

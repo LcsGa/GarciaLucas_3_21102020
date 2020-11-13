@@ -29,14 +29,12 @@ body {
   max-width: 1920px;
   @include desktop {
     & > main {
-      display: grid;
       grid-template: auto auto / 1fr 2fr;
     }
   }
-  @include tablet {
+  @include tablet-and-above {
     & > main {
       display: grid;
-      grid-template: auto auto / 1fr 1fr;
     }
   }
 }

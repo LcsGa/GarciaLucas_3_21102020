@@ -7,11 +7,11 @@
   @include desktop {
     @include responsive-display(grid-row);
   }
-  @include tablet {
+  @include tablet-only {
     @include responsive-display(grid-column);
   }
   main {
-    @include desktop {
+    @include tablet-and-above {
       display: grid;
       grid-template: repeat(2, 1fr) / repeat(2, 1fr);
       gap: 2rem;
@@ -19,14 +19,12 @@
     }
     margin-top: 1.5rem;
     a {
-      @include desktop {
-      }
       figure {
         @include hidden-overflow;
         @include flexed;
         @include w100p;
         @include shadowed(5px, 0.1);
-        @include desktop {
+        @include tablet-and-above {
           height: 300px;
           margin: 0;
         }
