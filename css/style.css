@@ -77,13 +77,13 @@ button {
     margin-left: 1rem; } }
 
 @media only screen and (min-width: 1240px) {
-  #instructions main {
+  #instructions section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%; } }
 
-#instructions main > div {
+#instructions section > div {
   display: flex;
   align-items: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -94,17 +94,17 @@ button {
   padding: 1.7rem 2.3rem;
   border-radius: 20px; }
   @media only screen and (min-width: 1240px) {
-    #instructions main > div {
+    #instructions section > div {
       margin-right: 0.8rem; } }
   @media only screen and (min-width: 720px) {
-    #instructions main > div {
+    #instructions section > div {
       background: white; } }
-  #instructions main > div .icon {
+  #instructions section > div .icon {
     width: 3rem; }
-    #instructions main > div .icon i {
+    #instructions section > div .icon i {
       font-size: 1.2rem;
       color: #7e7e7e; }
-  #instructions main > div p:last-child {
+  #instructions section > div p:last-child {
     font-weight: 600; }
 
 #instructions #purple-box {
@@ -134,15 +134,15 @@ button {
     grid-column: 1 / 3;
     background: white !important; } }
 
-#restaurants main {
+#restaurants section {
   margin-top: 1.5rem; }
   @media only screen and (min-width: 720px) {
-    #restaurants main {
+    #restaurants section {
       display: grid;
       grid-template: repeat(2, 1fr)/repeat(2, 1fr);
       gap: 2rem;
       height: calc(100% - 3rem); } }
-  #restaurants main a figure {
+  #restaurants section a figure {
     overflow: hidden;
     display: flex;
     width: 100%;
@@ -154,10 +154,10 @@ button {
     border-radius: 20px;
     margin: 1.5rem 0 0; }
     @media only screen and (min-width: 720px) {
-      #restaurants main a figure {
+      #restaurants section a figure {
         height: 300px;
         margin: 0; } }
-    #restaurants main a figure .new {
+    #restaurants section a figure .new {
       position: absolute;
       top: 0.8rem;
       right: 0.8rem;
@@ -166,26 +166,26 @@ button {
       color: #008766;
       background: #99e2d0;
       font-weight: 500; }
-    #restaurants main a figure .image {
+    #restaurants section a figure .image {
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       flex: 32; }
-    #restaurants main a figure img {
+    #restaurants section a figure img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    #restaurants main a figure figcaption {
+    #restaurants section a figure figcaption {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex: 1;
       padding: 1rem 1rem; }
-      #restaurants main a figure figcaption i {
+      #restaurants section a figure figcaption i {
         font-size: 1.5rem;
         padding-right: 1rem; }
-      #restaurants main a figure figcaption .full {
+      #restaurants section a figure figcaption .full {
         font-size: 1.625rem; }
 
 footer {
@@ -258,8 +258,8 @@ footer {
 button {
   transition: all 0.5s; }
   button:hover {
-    opacity: 0.8;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); }
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    opacity: 0.8; }
 
 .dish-container .dish,
 .dish-container .chosen-dish,

@@ -2,8 +2,8 @@
 button {
   transition: all 0.5s;
   &:hover {
+    @include shadowed(10px, 0.7);
     opacity: 0.8;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
   }
 }
 

@@ -10,7 +10,7 @@
   @include tablet-only {
     @include responsive-display(grid-column);
   }
-  main {
+  section {
     @include tablet-and-above {
       display: grid;
       grid-template: repeat(2, 1fr) / repeat(2, 1fr);

@@ -10,7 +10,7 @@
       margin-left: 1rem;
     }
   }
-  main {
+  section {
     @include desktop {
       display: flex;
       flex-direction: column;
